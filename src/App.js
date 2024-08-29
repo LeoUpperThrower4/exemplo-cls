@@ -3,10 +3,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <div className='fontes-wrapper'>
-        <h1>Título Fonte Customizada</h1>
-        <h1>Título Fonte Callback</h1>
-      </div>
+      <h1>Título Fonte Customizada</h1>
       <p>Este é o meu primeiro parágrafo</p>
       <button>Botão 1</button>
       <button>Botão 2</button>
