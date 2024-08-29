@@ -1,48 +1,18 @@
-import { useState } from 'react';
 import './App.css';
 
 function App() {
-  let [isLoaded, setIsLoaded] = useState(false);
-
-  setTimeout(() => {
-    setIsLoaded(true);
-  }, 2000);
-
   return (
-    <div className='container'>
-      <div className='ads-wrapper'>
-        {isLoaded && (
-          <div className='advertisement'>
-            <p>GOOGLE ADS</p>
-          </div>
-        )}
-      </div>
-
-      <article>
-        <h1>Dieta saudável</h1>
-        <p>
-          Uma dieta saudável é aquela que fornece ao corpo todos os nutrientes
-          necessários para funcionar corretamente. Existem muitos pontos de
-          vista diferentes sobre o que é uma dieta saudável. Aqui estão alguns
-          princípios gerais.
-        </p>
-        <img
-          src='https://via.placeholder.com/150'
-          alt='Imagem de uma dieta saudável'
-          width={150}
-          height={150}
-        />
-        <p>Uma dieta saudável pode conter os seguintes alimentos:</p>
-        <ul>
-          <li>Batata frita</li>
-          <li>Pastel</li>
-          <li>McDonalds</li>
-          <li>Coca-cola</li>
-        </ul>
-        <button>
-          Comprar agora <span>🛒</span>
-        </button>
-      </article>
+    <div>
+      <h1>Título da minha página</h1>
+      <p>Este é o meu primeiro parágrafo</p>
+      <button>Botão 1</button>
+      <button>Botão 2</button>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <div className='vermelho' />
     </div>
   );
 }
