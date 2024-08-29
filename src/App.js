@@ -10,12 +10,13 @@ function App() {
 
   return (
     <div className='container'>
-      {/* show only if var isLoaded is true */}
-      {isLoaded && (
-        <div className='advertisement'>
-          <p>GOOGLE ADS</p>
-        </div>
-      )}
+      <div className='ads-wrapper'>
+        {isLoaded && (
+          <div className='advertisement'>
+            <p>GOOGLE ADS</p>
+          </div>
+        )}
+      </div>
 
       <article>
         <h1>Dieta saudável</h1>
@@ -28,6 +29,8 @@ function App() {
         <img
           src='https://via.placeholder.com/150'
           alt='Imagem de uma dieta saudável'
+          width={150}
+          height={150}
         />
         <p>Uma dieta saudável pode conter os seguintes alimentos:</p>
         <ul>
